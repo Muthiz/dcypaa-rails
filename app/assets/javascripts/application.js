@@ -13,7 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
+//= require foundation-datetimepicker
 //= require turbolinks
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+$(function(){ 
+  $(document).foundation(); 
+  // if ($('.dateselect select')) {
+//     $('.dateselect select:first').fdatetimeselect();
+//   }
+});

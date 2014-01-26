@@ -1,4 +1,6 @@
 DcypaaRails::Application.routes.draw do
+  resources :events
+
   root 'main#index'
   get "/contact", to: 'main#contact'
   get "/events", to: 'main#events'

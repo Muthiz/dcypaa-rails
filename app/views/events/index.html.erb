@@ -1,0 +1,32 @@
+<%= content_for :title, 'Events Administration' %>
+<div class="row">
+  <div class="medium-8 medium-offset-2 columns">
+    <h1 class="text-center">EVENTS</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>When</th>
+          <th>Address</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @events.each do |event| %>
+          <tr>
+            <td><%= event.title %></td>
+            <td><%= event.when.strftime('%B %d, %Y') %></td>
+            <td><%= event.address %></td>
+            <td><%= link_to 'Show', event %><br /><%= link_to 'Edit', edit_event_path(event) %><br /><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'New Event', new_event_path, :class => 'button right' %>
+  </div>
+</div>

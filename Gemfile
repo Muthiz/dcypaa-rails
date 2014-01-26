@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 1.2'
 gem 'autoprefixer-rails'
 gem 'foundation-rails'
 gem 'compass-rails'
+gem 'foundation_rails_helper'
+gem 'foundation-datetimepicker-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
