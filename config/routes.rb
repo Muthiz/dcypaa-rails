@@ -3,7 +3,7 @@ DcypaaRails::Application.routes.draw do
 
   root 'main#index'
   get "/contact", to: 'main#contact'
-  get "/events", to: 'main#events'
+  get "/upcoming", to: 'main#events'
   get "/hotel", to: 'main#hotel'
   get "/info", to: 'main#info'
   get "/links", to: 'main#links'

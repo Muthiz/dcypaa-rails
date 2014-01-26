@@ -3,10 +3,10 @@
   <ul class="title-area">
     <li class="name">
       <div class="left">
-        <a href="/">
+        <%= link_to root_path do %>
           <div class="nav-logo rotate"></div>
           <h1>DCYPAA 2015</h1>
-        </a>
+        <% end %>
       </div>
     </li>
     <li class="toggle-topbar menu-icon">
@@ -20,15 +20,11 @@
     <ul class="right">
       <li class="divider"></li>
       <li>
-        <a href="/info/">
-          <p>About Us</p>
-        </a>
+        <%= link_to "About Us", info_path %>
       </li>
       <li class="divider"></li>
       <li>
-        <a href="/events/">
-          <p>Events</p>
-        </a>
+        <%= link_to "Events", upcoming_path %>
       </li>
       <li class="divider"></li>
       <li>
@@ -43,9 +39,7 @@
         </a>
       </li> -->
       <li>
-        <a href="/links/">
-          <p>Related Links</p>
-        </a>
+        <%= link_to "Related Links", links_path %>
       </li>
     </ul>
   </section>
