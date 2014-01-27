@@ -21,9 +21,10 @@
     <h2>Upcoming Events</h2>
   </div>
 </div>
-  <!-- Event -->
+<div class="events_container">
   <% @events.each do |e| %>
-  <div class="row">
+  <!-- Event -->
+  <div class="row homepage-event">
     <div class="small-4 columns">
       <p>
         <% if e.flier %>
@@ -41,9 +42,4 @@
     </div>
   </div>
   <% end %>
-
-
-  
-
-
-
+</div>
