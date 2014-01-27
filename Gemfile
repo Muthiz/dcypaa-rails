@@ -38,6 +38,8 @@ gem 'compass-rails'
 gem 'foundation_rails_helper'
 gem 'foundation-datetimepicker-rails'
 
+gem 'paperclip'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

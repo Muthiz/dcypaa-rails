@@ -1,5 +1,6 @@
 class MainController < ApplicationController
   def index
+    @events = Event.find(:all, :order => "id desc", :limit => 2).reverse
   end
 
   def links

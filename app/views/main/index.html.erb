@@ -24,38 +24,25 @@
   </div>
 </div>
   <!-- Event -->
-  
+  <% @events.each do |e| %>
   <div class="row">
     <div class="small-4 columns">
       <p>
-        <%= thumbnail_to "EACY_BID_5.jpg" %>
+        <% if e.flier %>
+          <%= thumbnail_to e.flier.url, e.flier_image.url %>
+        <% else %>
+          <%= thumbnail_to e.flier_image.url %>
+        <% end %>
       </p>
     </div>
     <div class="small-8 columns">
-      <h3>DCYPAA Bid Committee Meeting</h3>
-      <p>The DCYPAA Bid Committee meets every first and third Saturday of the month at 2:30 PM. Please feel free to join us! We meet at <a href="/info">2100 New Hampshire Ave NW, Washington DC 20009</a>.</p>
-			<p>The next meeting will be: <i>Saturday, February 1st, 2014</i></p>
-      <fine>Contact chair@dcypaa.org for more information.</fine>
-    </div>
-  </div>
-  
-  <div class="row">
-    <hr />
-  </div>
-  
-  <div class="row">
-    <div class="small-4 columns">
-      <p>
-        <%= thumbnail_to "80s_dance.pdf", "80s_dance.jpg" %>
-      </p>
-    </div>
-    <div class="small-8 columns">
-      <h3>Risky Business: Speaker Meeting and 80's Dance</h3>
-      <p>DCYPAA is hosting a speaker meeting, followed by an 80's themed dance, on February 8 at 1525 Newton St NW in Washington DC.  The meeting starts at 7:30pm with the dance starting at 9:30pm. Admission to the dance is $10, but if you register for the 2014 EACYPAA at the door, admission is free.</p>
-      <p><i>Saturday, February 8th, 2014</i></p>
+      <h3><%= e.title %></h3>
+      <p><%= e.description %></p>
+			<p><i><%= e.when.strftime('%B %d, %Y') %></i></p>
       <fine>Contact events@dcypaa.org for more information.</fine>
     </div>
   </div>
+  <% end %>
 
 
   

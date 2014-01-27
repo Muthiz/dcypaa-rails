@@ -1,7 +1,7 @@
+<%= content_for(:title, "Event #{@event.id}") %>
 <div class="row">
   <div class="medium-8 medium-offset-2 columns">
-    <p id="notice"><%= notice %></p>
-    <h1 class="text-center">Event <%= @event.id %></h1>
+    <h1 class="text-center">EVENT <%= @event.id %></h1>
     <p>
       <strong>Title:</strong>
       <%= @event.title %>
@@ -20,6 +20,11 @@
     <p>
       <strong>Address:</strong>
       <%= @event.address %>
+    </p>
+    
+    <p class="text-center">
+      <strong>Flier</strong>
+      <%= image_tag @event.flier.url %>
     </p>
 
     <%= link_to 'Edit', edit_event_path(@event), :class => "button right" %>
