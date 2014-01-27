@@ -37,6 +37,7 @@ gem 'foundation-rails'
 gem 'compass-rails'
 gem 'foundation_rails_helper'
 gem 'foundation-datetimepicker-rails'
+gem 'foundation-icons-sass-rails'
 
 gem 'paperclip'
 

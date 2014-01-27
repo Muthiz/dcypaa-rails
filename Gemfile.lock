@@ -51,6 +51,9 @@ GEM
     erubis (2.7.0)
     execjs (2.0.2)
     foundation-datetimepicker-rails (0.1.2)
+    foundation-icons-sass-rails (3.0.0)
+      railties (>= 3.1.1)
+      sass-rails (>= 3.1.1)
     foundation-rails (5.0.3.1)
       railties (>= 3.1.0)
       sass (>= 3.2.0)
@@ -145,6 +148,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   compass-rails
   foundation-datetimepicker-rails
+  foundation-icons-sass-rails
   foundation-rails
   foundation_rails_helper
   jbuilder (~> 1.2)

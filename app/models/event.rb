@@ -7,6 +7,10 @@ class Event < ActiveRecord::Base
     where("event_datetime >= ?", Date.today)
   end
   
+  def self.past
+    where("event_datetime < ?", Date.today)
+  end
+  
   scope :chron, -> { order 'event_datetime DESC' }
   scope :rchron, -> { order 'event_datetime ASC' }
 

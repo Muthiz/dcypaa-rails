@@ -7,6 +7,8 @@ class MainController < ApplicationController
   end
 
   def events
+    @events = Event.after_today.rchron
+    @previous_events = Event.past.chron
   end
   
   def contact
