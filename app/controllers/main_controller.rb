@@ -1,6 +1,6 @@
 class MainController < ApplicationController
   def index
-    @events = Event.find(:all, :order => "id desc", :limit => 2).reverse
+    @events = Event.after_today.rchron.limit(2)
   end
 
   def links

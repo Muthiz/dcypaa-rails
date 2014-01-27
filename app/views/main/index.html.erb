@@ -11,11 +11,9 @@
     <p>We are a fellowship of young men and women in the District of Columbia who share our experience, strength, and hope with each other in order to stay sober and help other Alcoholics achieve sobriety. We want to show others that suffering is not a requirement for sobriety. As young members of Alcoholics Anonymous we try to live purposeful, fun, eventful lives without the use of alcohol. We are a diverse group of people of many different ethnicities, beliefs, and backgrounds, that normally would not mix but within us there exists an understanding, respect, and community that creates a fellowship of true friends. Although we are a fellowship of young people within Alcoholics Anonymous, we have no age limits so if you enjoy living life we have a place for you.</p>
   </div>
   <div class="medium-5 columns">
-
     <p>
       <%= image_tag "white_chairs.jpg" %>
     </p>
-      
   </div>
 </div>
 <div class="row">
@@ -38,7 +36,7 @@
     <div class="small-8 columns">
       <h3><%= e.title %></h3>
       <p><%= e.description %></p>
-			<p><i><%= e.when.strftime('%B %d, %Y') %></i></p>
+			<p><i><%= e.event_datetime.strftime('%B %d, %Y') %></i></p>
       <fine>Contact events@dcypaa.org for more information.</fine>
     </div>
   </div>

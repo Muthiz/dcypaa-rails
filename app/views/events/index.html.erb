@@ -17,7 +17,7 @@
         <% @events.each do |event| %>
           <tr>
             <td><%= event.title %></td>
-            <td><%= event.when.strftime('%B %d, %Y') %></td>
+            <td><%= event.event_datetime.strftime('%B %d, %Y') %></td>
             <td><%= event.address %></td>
             <td><%= link_to 'Show', event %><br /><%= link_to 'Edit', edit_event_path(event) %><br /><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
