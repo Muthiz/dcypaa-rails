@@ -32,7 +32,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'autoprefixer-rails'
-gem 'foundation-rails'
+gem 'foundation-rails', '5.0.3.1'
 gem 'compass-rails'
 gem 'foundation_rails_helper'
 gem 'foundation-datetimepicker-rails'
