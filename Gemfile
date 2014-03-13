@@ -31,6 +31,8 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'aws-sdk'
+
 gem 'autoprefixer-rails'
 gem 'foundation-rails', '5.0.3.1'
 gem 'compass-rails'
