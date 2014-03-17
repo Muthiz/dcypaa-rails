@@ -35,6 +35,11 @@
       </div>
     </div>
     <% end %>
+    <% if @events.empty? %>
+      <div class="sorry text-center">
+        No scheduled upcoming events. Thanks for your support!
+      </div>
+    <% end %>
     
     <h4>Previous Events</h4>
     
