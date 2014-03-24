@@ -12,6 +12,10 @@ class AttendeesController < ApplicationController
     @attendee = Attendee.find(params[:id])
   end
   
+  def edit
+    @attendee = Attendee.find(params[:id])
+  end
+  
   # POST /attendees
   # POST /attendees.json
   def create
@@ -23,6 +27,23 @@ class AttendeesController < ApplicationController
         format.json { render action: 'show', status: :created, location: @attendee }
       else
         format.html { render action: 'new' }
+        format.json { render json: @attendee.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+  
+  # PATCH/PUT /attendees/1
+  # PATCH/PUT /attendees/1.json
+  def update
+    
+    @attendee = Attendee.find(params[:id])
+    
+    respond_to do |format|
+      if @attendee.update(attendee_params)
+        format.html { redirect_to @attendee, notice: 'Attendee Information was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: 'edit' }
         format.json { render json: @attendee.errors, status: :unprocessable_entity }
       end
     end
