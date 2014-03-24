@@ -1,5 +1,10 @@
 DcypaaRails::Application.routes.draw do
+
+  get "/success", to: 'attendees#success'
+  get "/registration", to: 'attendees#new'
+
   resources :events
+  resources :attendees
 
   root 'main#index'
   get "/contact", to: 'main#contact'

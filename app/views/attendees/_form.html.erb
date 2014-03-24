@@ -1,0 +1,17 @@
+<%= form_for @attendee do |f| %>
+  
+  <%= f.text_field :first_name %>
+  <%= f.text_field :last_name %>
+  <%= f.email_field :email %>
+  <%= f.text_field :address %>
+  <%= f.text_field :city %>
+  <%= f.text_field :state %>
+  <%= f.text_field :zip %>
+  <%= f.check_box :aa, "AA" %>
+  <%= f.check_box :alanon, "Al-Anon" %>
+  <%= f.check_box :alateen, "Alateen" %>
+  <%= f.date_select :sobriety_date %>
+  
+  <%= f.submit "Submit", :class => "small radius success button right" %>
+  
+<% end %>

@@ -1,0 +1,14 @@
+<%= content_for(:title, "Attendee #{@attendee.id}") %>
+<div class="row">
+  <div class="medium-8 medium-offset-2 columns">
+    <h1 class="text-center">Attendee <%= @attendee.id %></h1>
+    <p>
+      <strong>Name:</strong>
+      <%= @attendee.first_name %> <%= @attendee.last_name %>
+    </p>
+
+    <%= link_to 'Edit', edit_attendee_path(@attendee), :class => "button right" %>
+    <%= link_to 'Back Home', root_path, :class => "button left" %>
+    
+  </div>
+</div>

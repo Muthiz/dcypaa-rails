@@ -1,4 +1,7 @@
 module ApplicationHelper
+  
+  include FoundationRailsHelper::FlashHelper
+  
   def title_maker(title)
     if title.is_a? String
       title + " | DCYPAA 2015"
