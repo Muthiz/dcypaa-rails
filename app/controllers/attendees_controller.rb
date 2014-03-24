@@ -3,6 +3,10 @@ class AttendeesController < ApplicationController
   def success
   end
   
+  def index
+    @attendees = Attendee.all
+  end
+  
   # GET /attendees/new
   def new
     @attendee = Attendee.new

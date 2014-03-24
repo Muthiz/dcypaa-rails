@@ -4,7 +4,24 @@
     <h1 class="text-center">Attendee <%= @attendee.id %></h1>
     <p>
       <strong>Name:</strong>
-      <%= @attendee.first_name %> <%= @attendee.last_name %>
+      <%= @attendee.first_name %> <%= @attendee.last_name %> <br/>
+			<strong>Email:</strong>
+			<%= @attendee.email%> <br/>
+			<strong>Address:</strong>
+			<%= @attendee.address%>
+			<%= @attendee.city%> <%= @attendee.state%> <%= @attendee.zip%> <br/>
+			<strong>Sobriety Date:</strong>
+			<%= @attendee.sobriety_date%> <br/>
+			<strong>Affiliations:</strong> 
+			<% if @attendee.aa %>
+				<strong>AA</strong>
+			<% end %>
+			<% if @attendee.alanon %>
+				<strong>Al-Anon</strong>
+			<% end %>
+			<% if @attendee.alateen %>
+				<strong>Alateen</strong>
+			<% end %>
     </p>
 
     <%= link_to 'Edit', edit_attendee_path(@attendee), :class => "button right" %>
