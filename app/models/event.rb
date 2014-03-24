@@ -15,6 +15,5 @@ class Event < ActiveRecord::Base
   
   scope :chron, -> { order 'event_datetime DESC' }
   scope :rchron, -> { order 'event_datetime ASC' }
-
   
 end
