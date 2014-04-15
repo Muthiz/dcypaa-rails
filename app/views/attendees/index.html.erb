@@ -1,34 +1,36 @@
 <%= content_for :title, 'Attendee List' %>
 
-<h1>Attendee#index</h1>
-
-<p>Find me in app/views/attendee/index.html.erb</p>
-
-<div class="row">
-	<div class="large-12 columns">
-		<table width="100%">
-			<thead>
-				<tr>
-					<td>ID #</td>
-					<td>Name</td>
-					<td>Email</td>
-					<td>Address</td>
-					<td>Affiliations</td>
-				</tr>
-			</thead>
-				<% @attendees.each do |a| %>
+<div class="container">
+  <div class="row">
+    <div class="small-12 text-center columns">
+      <h1>REGISTERED ATTENDEE LIST</h1>
+    </div>
+  </div>
+  <div class="row">
+  	<div class="large-12 columns">
+  		<table width="100%">
+  			<thead>
+  				<tr>
+  					<td>ID #</td>
+  					<td>Name</td>
+  					<td>Email</td>
+  					<td>Address</td>
+  					<td>Affiliations</td>
+  				</tr>
+  			</thead>
+  				<% @attendees.each do |a| %>
 				
-				<tr>
-					<td><%= a.id %></td>
-					<td><%= a.first_name %> <%= a.last_name %></td>
-					<td><%= a.email %></td>
-					<td><%= a.address %> <%= a.city %> <%= a.state %> <%= a.zip %></td>
-					<td><% if a.aa %> AA <% end %>
-			<% if a.alanon %> AlAnon <% end%>
-			<% if a.alateen %> AlAteen <% end%></td>
-				</tr>
-				<% end %>
-		</table>
-	</div>
+  				<tr>
+  					<td><%= a.id %></td>
+  					<td><%= a.first_name %> <%= a.last_name %></td>
+  					<td><%= a.email %></td>
+  					<td><%= a.address %> <%= a.city %> <%= a.state %> <%= a.zip %></td>
+  					<td><% if a.aa %> AA <% end %>
+  			<% if a.alanon %> AlAnon <% end%>
+  			<% if a.alateen %> AlAteen <% end%></td>
+  				</tr>
+  				<% end %>
+  		</table>
+  	</div>
+  </div>
 </div>
-
