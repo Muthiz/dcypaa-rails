@@ -1,9 +1,9 @@
 module ApplicationHelper
   def title_maker(title)
     if title.is_a? String
-      title + " | DCYPAA 2015"
+      title + " | DCYPAA 2016"
     else
-      "DCYPAA 2015"
+      "DCYPAA 2016"
     end
   end
   
