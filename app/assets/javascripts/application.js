@@ -17,9 +17,4 @@
 //= require turbolinks
 //= require_tree .
 
-$(function(){ 
-  $(document).foundation(); 
-  // if ($('.dateselect select')) {
-//     $('.dateselect select:first').fdatetimeselect();
-//   }
-});
+$(function(){ $(document).foundation(); });

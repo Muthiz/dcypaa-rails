@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'aws-sdk'
 
 gem 'autoprefixer-rails'
-gem 'foundation-rails', '5.0.3.1'
+gem 'foundation-rails'
 gem 'compass-rails'
 gem 'foundation_rails_helper'
 gem 'foundation-datetimepicker-rails'
